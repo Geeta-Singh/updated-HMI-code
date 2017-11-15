@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#F00FFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="md_blue_300">#ca0d0d</color>
+    <color name="md_blue_800">#5376ea</color>
+    <color name="md_grey_400">#beb6b6</color>
+    <color name="md_red_500">#FFD25C5C</color>
+    <color name="md_green_500">#35e478</color>
+    <color name="md_yellow_500">#fbff0d</color>
+
+</resources>

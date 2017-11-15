@@ -1,0 +1,267 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontalScrollView"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:fillViewport="true"
+
+    android:padding="5dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="fill_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bydesign.hmicontroller.fragments.LogsFactroyFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++NEW TABLE INSERTION+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:text="Operations Detail"
+                android:textColor="#060606"
+                android:textSize="30sp" />
+
+            <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scrollbars="vertical">-->
+
+                <!--<TableLayout-->
+
+                    <!--android:id="@+id/header"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:stretchColumns="*">-->
+
+                    <!--<TableRow android:background="#126588">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/srno"-->
+                            <!--android:text="Sr.No"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!---->
+                            <!--android:textSize="15dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/timestamp"-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text=" Timestamp "-->
+                            <!--android:textColor="#ffffff"-->
+
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/user"-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="User"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:id="@+id/opcode"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:background="@drawable/header"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:text="Op Code"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textColor="#ffffff"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:textSize="20sp" />&ndash;&gt;-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/operationperformed"-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Operation"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:textSize="20sp" />-->
+
+
+                    <!--</TableRow>-->
+                <!--</TableLayout>-->
+
+                <!--&lt;!&ndash; </ScrollView>&ndash;&gt;-->
+            <!--</ScrollView>-->
+
+            <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++NEW TABLE INSERTION END+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+            <!--<ScrollView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scrollbars="vertical">-->
+
+                <!--<HorizontalScrollView-->
+                    <!--android:id="@+id/horizontalScroll2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:fillViewport="true">-->
+
+                    <TableLayout
+                        android:id="@+id/maintableH"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal"
+                        android:stretchColumns="*">
+
+                    </TableLayout>
+
+                    <!--</TableLayout>-->
+                <!--</HorizontalScrollView>-->
+            <!--</ScrollView>-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:fillViewport="true"
+                    android:paddingBottom="50dp">
+
+
+                    <TableLayout
+                        android:id="@+id/maintable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:stretchColumns="*"></TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:text="Login Detail"-->
+                <!--android:textColor="#060606"-->
+                <!--android:textSize="30sp" />-->
+
+            <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scrollbars="vertical">-->
+
+                <!--<TableLayout-->
+
+                    <!--android:id="@+id/header2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:stretchColumns="*">-->
+
+                    <!--<TableRow android:background="#126588">-->
+
+                        <!--<TextView-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Sr.No"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Timestamp"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="       User"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Op Code"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textSize="20sp" />-->
+
+                        <!--<TextView-->
+                            <!--android:background="@drawable/header"-->
+                            <!--android:padding="5dp"-->
+                            <!--android:text="Operation"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:textColor="#ffffff"-->
+                            <!--android:textSize="20sp" />-->
+
+
+                    <!--</TableRow>-->
+                <!--</TableLayout>-->
+
+                <!--&lt;!&ndash; </ScrollView>&ndash;&gt;-->
+            <!--</ScrollView>-->
+
+            <!--<ScrollView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:scrollbars="vertical">-->
+                <!--&gt;-->
+
+                <!--<HorizontalScrollView-->
+                    <!--android:id="@+id/horizontalScrollView2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:fillViewport="true"-->
+                    <!--android:paddingBottom="50dp">-->
+
+                    <!--<TableLayout-->
+                        <!--android:id="@+id/StringTable"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginBottom="50dp"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:stretchColumns="*"-->
+
+                        <!--&gt;</TableLayout>-->
+                <!--</HorizontalScrollView>-->
+
+            <!--</ScrollView>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!-- </ScrollView>-->
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

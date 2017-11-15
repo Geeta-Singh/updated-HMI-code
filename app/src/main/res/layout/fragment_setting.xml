@@ -1,0 +1,235 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontalScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:fillViewport="true"
+
+    android:padding="25dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="30dp"
+        android:paddingBottom="30dp"
+        tools:context="info.bydesign.hmicontroller.SettingsActivityFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/button_blue"
+                    android:text="backup"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/addnew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_blue"
+                    android:text="addnew"
+                    android:textColor="#ffffff" />
+
+                <!--<AutoCompleteTextView-->
+                    <!--android:id="@+id/urls"-->
+                    <!--android:layout_width="500dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="100dp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/saveurl"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:background="@drawable/button_blue"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="SAVE"-->
+                    <!--android:textColor="#ffffff" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/seturl"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:background="@drawable/button_blue"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:text="SET"-->
+                    <!--android:textColor="#ffffff" />-->
+                <!--   <Spinner
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/url"
+                         android:padding="15dp">
+
+                     </Spinner>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical">
+
+                    <TableLayout
+
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:stretchColumns="*">
+
+                        <TableRow android:background="#126588">
+
+                            <TextView
+                                android:id="@+id/parameter"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Parameter"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/unit"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Unit"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/alarm1"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Alarm1"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/alarm2"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Alarm2"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/gain"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Gain"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/offset"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Offset"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                            <!--   <TextView
+                                   android:text="MinOffset"
+                                   android:id="@+id/minoffset"
+                                   android:textSize="20sp"
+                                   android:padding="5dp"
+                                   android:textColor="#ffffff"/>
+                               <TextView
+                                   android:text="MaxOffset"
+                                   android:id="@+id/maxoffset"
+                                   android:textSize="20sp"
+                                   android:padding="5dp"
+                                   android:textColor="#ffffff"/>
+                               <TextView
+                                   android:text="MinGain"
+                                   android:id="@+id/mingain"
+                                   android:textSize="20sp"
+                                   android:padding="5dp"
+                                   android:textColor="#ffffff"/>
+                               <TextView
+                                   android:text="MaxGain"
+                                   android:id="@+id/maxgain"
+                                   android:textSize="20sp"
+                                   android:padding="5dp"
+                                   android:textColor="#ffffff"/>-->
+                            <TextView
+                                android:id="@+id/range"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Range"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/resolution"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Resolution"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/status"
+                                android:layout_marginLeft="40dp"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="Status"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_marginLeft="40dp"
+                                android:background="@drawable/header"
+                                android:padding="5dp"
+                                android:text="    "
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <!-- </ScrollView>-->
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbars="vertical">
+
+                    <TableLayout
+                        android:id="@+id/maintable"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center_vertical"
+                        android:stretchColumns="*"></TableLayout>
+
+
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>
